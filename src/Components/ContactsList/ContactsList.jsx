@@ -3,8 +3,7 @@ import Button from '../Button/Button';
 import s from '../ContactsList/ContactsList.module.css';
 // import { v4 as unId } from "uuid";
 
-function ContactsList(props) {
-  const { contacts, onDeleteContact } = props;
+function ContactsList({ contacts, onDeleteContact }) {
   return (
     <ul className={s.ul}>
       {contacts.map(({ id, name, number }) => (

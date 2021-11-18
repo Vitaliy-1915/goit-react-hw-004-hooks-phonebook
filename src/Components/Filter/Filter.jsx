@@ -1,8 +1,7 @@
 import React from 'react';
 import s from '../Filter/Filter.module.css';
 
-function Filter(props) {
-  const { onChange, value } = props;
+function Filter({ onChange, value }) {
   return (
     <label className={s.label}>
       Find contacts by name
