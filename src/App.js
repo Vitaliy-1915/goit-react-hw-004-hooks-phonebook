@@ -13,7 +13,6 @@ function App() {
   const [filterValue, setFilterValue] = useState('');
 
   useEffect(() => {
-    console.log('cont , useEf');
     window.localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
