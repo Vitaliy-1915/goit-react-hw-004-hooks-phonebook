@@ -39,10 +39,8 @@ function App() {
     setContacts(contacts.filter(contact => contact.id !== contactId));
   };
 
-  const normalizeContacts = filterValue.toLocaleLowerCase();
-
   const filterContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(normalizeContacts),
+    contact.name.toLowerCase().includes(filterValue.toLocaleLowerCase()),
   );
 
   return (
